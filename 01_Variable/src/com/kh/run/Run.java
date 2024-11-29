@@ -2,6 +2,8 @@ package com.kh.run;
 
 import com.kh.variable.A_Variable;
 import com.kh.variable.B_KeyboardInput;
+import com.kh.variable.C_Printf;
+import com.kh.variable.D_Cast;
 
 public class Run {
 	
@@ -16,8 +18,11 @@ public class Run {
 		//별칭.메소드명()
 		//what.decleareVariable();
 		B_KeyboardInput b = new B_KeyboardInput();
-		b.inputTest1();
+		//b.inputTest1();
 		
+		D_Cast d = new D_Cast();
+		d.forceCasting();
 		
+		System.out.println();
 	}
 }
