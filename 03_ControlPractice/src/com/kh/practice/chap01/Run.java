@@ -7,7 +7,7 @@ public class Run {
 		
 		
 		ControlPractice kk = new ControlPractice();
-		kk.method10();
+		kk.method9();
 		
 	}
 	

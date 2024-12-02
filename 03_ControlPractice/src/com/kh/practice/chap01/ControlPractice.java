@@ -261,36 +261,32 @@ public class ControlPractice {
 		System.out.print("출석 회수 : ");
 		double as = sc.nextDouble();
 
-	
+		String result= "";
 		double mid = ms * 0.2;
 		double last = ls * 0.3;
 		double home = hs * 0.3;
 		double att = as * 0.2;
 		double total = mid + last + home + as;
 		
-		if(as <7) {
-			System.out.println("Fail [점수미달]");
+		if(as < 7) {
+			System.out.printf("Fail [출석 회수 부족 (%.0f/%.0f)]",as,(double)20);
+		}else if(total >= 70){
+			System.out.println("중간 고사 점수(20) : " + mid);
+			System.out.println("기말 고사 점수(30) : " + last);
+			System.out.println("과제 점수    (30) : " + home);
+			System.out.println("출석 회수    (20) : " + as);
+			System.out.println("총점             : " + total);
+			System.out.println("합격입니다 축하합니다.");
 		}else {
-			
-			
+			System.out.println("중간 고사 점수(20) : " + mid);
+			System.out.println("기말 고사 점수(30) : " + last);
+			System.out.println("과제 점수    (30) : " + home);
+			System.out.println("출석 회수    (20) : " + as);
+			System.out.println("총점             : " + total);
+			System.out.println("Fail [점수 미달]");
 		}
-		
-		
-		
-		
-		
-		
-		System.out.println("===============결과===========");
-		System.out.println("중간고사 점수 (20): " + mid);
-		System.out.println("기말고사 점수 (30):" + last);
-		System.out.println("과제  점수   (30):" + home);
-		System.out.println("출석  점수   (20):" + as);
-		System.out.println(" 총   점수      :" + total);
-	
-		
-		
-
-	}
+		sc.close();
+		}
 
 	public void method10() {
 
@@ -328,7 +324,7 @@ public class ControlPractice {
 			method8();
 		case 9:
 			method9();
-		default : 
+		default:
 			System.out.println("잘못 입력 하셨습니다. 다시 입력해주세요.");
 		}
 
