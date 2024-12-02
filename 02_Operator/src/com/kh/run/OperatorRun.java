@@ -7,6 +7,7 @@ import com.kh.operator.D_Comparison;
 import com.kh.operator.D_comparison;
 import com.kh.operator.E_Logical;
 import com.kh.operator.F_Triple;
+import com.kh.operator.G_Compound;
 
 public class OperatorRun {
 
@@ -28,7 +29,10 @@ public class OperatorRun {
 		//pop.method5();
 		
 		F_Triple pup = new F_Triple();
-		pup.method3();
+		pup.method6();
+		
+		G_Compound hh = new G_Compound();
+		//hh.method1();
 		
 	}
 
