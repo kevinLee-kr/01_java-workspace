@@ -189,26 +189,24 @@ public class ControlPractice {
 		System.out.print("몸무게를 입력해 주세요 : ");
 		double weight = sc.nextDouble();
 
-		double BMI = weight / (height * height);
+		double bmi = weight / (height * height);
 		String result = "";
 
-		if (BMI >= 30) {
+		if (bmi >= 30) {
 			result = "고도비만";
-		} else if (BMI >= 25) {
+		} else if (bmi >= 25) {
 			result = "비만";
-		} else if (BMI >= 23) {
+		} else if (bmi >= 23) {
 			result = "과체중";
-		} else if (BMI >= 18.5) {
+		} else if (bmi >= 18.5) {
 			result = "정상체중";
-		} else if (BMI < 18.5) {
+		} else{
 			result = "저체중";
-		} else {
-			System.out.println("잘못 입력 하셨습니다.");
 		}
 
 		System.out.println(height);
 		System.out.println(weight);
-		System.out.println(BMI);
+		System.out.println(bmi);
 		System.out.println(result);
 
 	}
@@ -246,7 +244,7 @@ public class ControlPractice {
 			System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
 		}
 		System.out.printf("%.0f %s %.0f = %f", num1, num3, num2, result);
-
+		sc.close();
 	}
 
 	public void method9() {
@@ -261,28 +259,23 @@ public class ControlPractice {
 		System.out.print("출석 회수 : ");
 		double as = sc.nextDouble();
 
-		String result= "";
+
 		double mid = ms * 0.2;
 		double last = ls * 0.3;
 		double home = hs * 0.3;
-		double att = as * 0.2;
 		double total = mid + last + home + as;
 		
-		if(as < 7) {
-			System.out.printf("Fail [출석 회수 부족 (%.0f/%.0f)]",as,(double)20);
+		System.out.println("중간 고사 점수(20) : " + mid);
+		System.out.println("기말 고사 점수(30) : " + last);
+		System.out.println("과제 점수    (30) : " + home);
+		System.out.println("출석 회수    (20) : " + as);
+		System.out.println("총점             : " + total);
+		
+		if(as < 15) {
+			System.out.printf("Fail [출석 회수 부족 (%.0f/20)]",as);
 		}else if(total >= 70){
-			System.out.println("중간 고사 점수(20) : " + mid);
-			System.out.println("기말 고사 점수(30) : " + last);
-			System.out.println("과제 점수    (30) : " + home);
-			System.out.println("출석 회수    (20) : " + as);
-			System.out.println("총점             : " + total);
 			System.out.println("합격입니다 축하합니다.");
 		}else {
-			System.out.println("중간 고사 점수(20) : " + mid);
-			System.out.println("기말 고사 점수(30) : " + last);
-			System.out.println("과제 점수    (30) : " + home);
-			System.out.println("출석 회수    (20) : " + as);
-			System.out.println("총점             : " + total);
 			System.out.println("Fail [점수 미달]");
 		}
 		sc.close();
