@@ -323,5 +323,5 @@ public class LoopPractice {
 			star -= 1;
 		}
 	}
-
+int random = (int)Mat
 }

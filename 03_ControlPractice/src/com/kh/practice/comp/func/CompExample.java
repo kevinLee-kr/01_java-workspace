@@ -51,8 +51,9 @@ public class CompExample {
 				}
 			}
 			System.out.println(" ");
+			sc.close();
 		}
-
+		
 	}
 
 	public void practice3() {
