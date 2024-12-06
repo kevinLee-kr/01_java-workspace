@@ -246,57 +246,40 @@ public class LoopPractice {
 	}
 
 	public void method12() {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
-		while(true) {
+		int result = 0;
+		while (true) {
 			System.out.print("첫 번쨰 정수를 입력 ㄱㄱ : ");
 			int fn = sc.nextInt();
-			
+
 			System.out.print("두 번쨰 정수를 입력 ㄱㄱ : ");
 			int sn = sc.nextInt();
-			
+
 			sc.nextLine();
-			
+
 			System.out.print("연산자 선택 (  +  -  *  /  %) : ");
 			String ch = sc.nextLine();
-			
-			
-			if(ch.equals("exit")) {
+
+			if (ch.equals("exit")) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
-			}else if(sn ==0){
+			} else if (sn == 0) {
 				System.out.println("0으로 나눌 수 없습니다. 다시 입력해주세요.");
-			}else{
-				
-				int result = 0;
-				switch(ch) {
-				case "+" : 
-					result = fn + sn; break;
-				case "-" : 
-					result = fn - sn; break;
-				case "*" : 
-					result = fn * sn; break;
-				case "/" : 
-					result = fn / sn; break;
-				case "%" : 
-					result = fn % sn; break;	
-				default :
-					System.out.println("없는 연산자 입니다. ");
+			} else {
+
+				switch (ch) {
+				case "+":result = fn + sn;System.out.printf(" %d %s %d = %d\n", fn, ch, sn, result);break;
+				case "-":result = fn - sn;System.out.printf(" %d %s %d = %d\n", fn, ch, sn, result);break;
+				case "*":result = fn * sn;System.out.printf(" %d %s %d = %d\n", fn, ch, sn, result);break;
+				case "/":result = fn / sn;System.out.printf(" %d %s %d = %d\n", fn, ch, sn, result);break;
+				case "%":result = fn % sn;System.out.printf(" %d %s %d = %d\n", fn, ch, sn, result);break;
+				default:System.out.println("없는 연산자 입니다. ");
 				}
-				
-				System.out.printf(" %d %s %d = %d", fn, ch, sn, result);
-				System.out.println(" ");
 			}
-			
 		}
-		
-		
-		
-		
-		
 	}
-	
+
 	public void method13() {
 
 		int star = 1;
@@ -323,5 +306,5 @@ public class LoopPractice {
 			star -= 1;
 		}
 	}
-int random = (int)Mat
+
 }

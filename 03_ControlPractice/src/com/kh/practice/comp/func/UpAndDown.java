@@ -22,18 +22,17 @@ public class UpAndDown {
 			} else if (num >= 1 && num <= 99) {
 				if (num < random) {
 					System.out.println("up!");
+					j++;
 				} else if (num > random) {
 					System.out.println("down!");
+					j++;
 				} else {
 					System.out.println("정답!!!");
 					break;
-				}
+				}}
 			}
-			j += 1;
-
-		}
+		sc.close();
 		System.out.printf("%d회만에 맞추셨습니다... 대단한걸요? ", j);
-
 	}
-
-}
+	
+	}

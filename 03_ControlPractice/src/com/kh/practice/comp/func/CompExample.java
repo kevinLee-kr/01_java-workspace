@@ -93,8 +93,8 @@ public class CompExample {
 					count++;
 				}
 			}
-			System.out.printf("%s 안에 포함된 %c 개수 : %d", fruit, ch, count);
-			System.out.println(" ");
+			System.out.printf("%s 안에 포함된 %c 개수 : %d\n", fruit, ch, count);
+
 			System.out.println("더 하시겠습니까? (y/n)");
 			char answer = sc.nextLine().charAt(0); // 더 하시겠습니까? 정보 수집 answer
 			if (answer == 'n' || answer == 'N') {

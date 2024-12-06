@@ -9,7 +9,7 @@ public class Run {
 		
 
 		LoopPractice qq = new LoopPractice();
-	//	qq.method12();		
+		qq.method12();		
 	}
 	
 	
