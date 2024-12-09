@@ -36,9 +36,9 @@ public class FieldRun {
 		//private:오직오직오직 해당 클래스에서만 가능.
 		//System.out.println(f2.pri);
 		
-		//FieldTest3 f3 = new FieldTest3();
+		FieldTest3 f3 = new FieldTest3();
 		System.out.println(FieldTest3.sta);
-		//sk
+		
 		
 		//수정을 하고 싶다면?!?!
 		FieldTest3.sta = "zzz";
