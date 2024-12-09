@@ -44,22 +44,12 @@ public class NonStaticMethod {
 
 	public char method4(String str, int index) {
 		System.out.println("매개변수와 반환값 둘 다 있는 메소드 입니다.");
-		if(index >=0 && index < str.length()) {
+		if (index >= 0 && index < str.length()) {
 			return str.charAt(index);
-		}else {
+		} else {
 			return ' ';
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 }
