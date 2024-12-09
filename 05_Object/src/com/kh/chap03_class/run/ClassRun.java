@@ -1,10 +1,8 @@
 package com.kh.chap03_class.run;
 
-
 import com.kh.chap03_class.model.vo.ProductTestMyself;
 
 public class ClassRun {
-
 
 //		System.out.println(my.getId());
 //		System.out.println(my.getAge());
@@ -69,68 +67,36 @@ public class ClassRun {
 
 		ProductTestMyself my = new ProductTestMyself();
 
-
 		my.setBrand1("삼성");
 		my.setpName1("태블릿");
 		my.setPrice1(1100);
-		
+
 		my.setBrand2("LG");
 		my.setpName2("노트북");
 		my.setPrice2(1200);
-		
+
 		my.setBrand3("핸드폰");
 		my.setpName3("하웨이");
 		my.setPrice3(1300);
 		System.out.println("이호석");
 		System.out.println("===상품1===");
-		System.out.println("상품명 : " + my.getpName1());
-		System.out.println("가격 : " + my.getPrice1() + "원");
-		System.out.println("브랜드 : " + my.getBrand1());
+		System.out.println("상품명 : " +			my.getpName1());
+		System.out.println("가격 : " +			my.getPrice1() + "원");
+		System.out.println("브랜드 : " + 		my.getBrand1());
 		System.out.println(" ");
-		
+
 		System.out.println("===상품2===");
-		System.out.println("상품명 : " + my.getpName2());
-		System.out.println("가격 : " + my.getPrice2() + "원");
-		System.out.println("브랜드 : " + my.getBrand2());
+		System.out.println("상품명 : " +			my.getpName2());
+		System.out.println("가격 : " + 			my.getPrice2() + "원");
+		System.out.println("브랜드 : " + 		my.getBrand2());
 		System.out.println(" ");
-		
+
 		System.out.println("===상품3===");
-		System.out.println("상품명 : " + my.getpName3());
-		System.out.println("가격 : " + my.getPrice3() + "원");
-		System.out.println("브랜드 : " + my.getBrand3());
+		System.out.println("상품명 : " + 		my.getpName3());
+		System.out.println("가격 : " +			my.getPrice3() + "원");
+		System.out.println("브랜드 : " + 		my.getBrand3());
 		System.out.println(" ");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

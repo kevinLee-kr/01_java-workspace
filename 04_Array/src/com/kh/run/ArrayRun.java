@@ -11,7 +11,7 @@ public class ArrayRun {
 		//aa.method10();
 		
 		B_ArrayCopy bb = new B_ArrayCopy();
-		//bb.method5();
+		bb.method4();
 	}
 
 }

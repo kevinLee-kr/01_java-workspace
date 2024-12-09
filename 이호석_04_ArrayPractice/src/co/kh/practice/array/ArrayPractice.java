@@ -331,7 +331,7 @@ public class ArrayPractice {
 			System.out.print(arr[i] + " ");
 		}
 		System.out.println(" ");
-		System.out.println(" 문자의 개수 : " + count);
+		System.out.println("찾으신 문자의 개수 : " + count);
 
 	}
 

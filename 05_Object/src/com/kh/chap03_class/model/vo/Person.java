@@ -11,6 +11,19 @@ public class Person {
 	private	String phone;
 	private String email; // private으로 했으니 직접 접근이 되지 않는다. 
 	
+	
+	public Person() { }
+	public Person(String id, String pwd, String name, int age, char gender, String phone, String email) {
+		this.id=id;
+		this.pwd=pwd;
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+		this.phone=phone;
+		this.email=email;
+	}
+	
+	
 	//setter 7개
 	public void setId(String id) {
 		this.id = id;

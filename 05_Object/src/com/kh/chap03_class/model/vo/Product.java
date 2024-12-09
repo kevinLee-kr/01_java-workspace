@@ -1,7 +1,9 @@
 package com.kh.chap03_class.model.vo;
 
 public class Product {
-
+	//클래스 선언 구문에 작성가능한 접근제한자는 2가지가 있다. (public , default)
+	//public 은 우리가 아는 것처럼, 해왔던 것처럼 사용하면 되는데
+	//default의 경우. 표기하는 것이아닌, 비워두면 된다. 
 	
 	///필드
 	// 필드 == 멤버 변수 \\ 인트턴스 변수
@@ -23,9 +25,7 @@ public class Product {
 	*/
 	
 	//기본생성자 && 접근제한자) jvm이 자동으로 만들어줌
-	public Product() {
-		
-	}
+	public Product() {	}
 	//매개변수 생성자를 만들어보자. 
 	//[표현법]	
 			//접근제한자 클래스면 () {매개변수, 매개변수}

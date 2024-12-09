@@ -17,6 +17,8 @@ public class ProductTest {
 		System.out.println(p1.infomation());
 		System.out.println(p2.infomation());
 		System.out.println(p3.infomation());
+		
+		
 		System.out.println("================================================================");
 		Product t1 = new Product("ssgnote9", "갤럭시노트9", "경기도 수원", 1200000, 0.05);
 		Product t2 = new Product("lgxnote5", "LG스마트폰5", "경기도 평택", 1200000, 0.05);
