@@ -159,16 +159,17 @@ public class ArrayPractice1 {
 		System.out.println("치킨 이름을 입력해주세요 : ");
 		String userorder = sc.nextLine();
 
-		switch (userorder) {
-		case "양념":
-			System.out.println(userorder + "치킨 쌉가능 바로감 ㄱㄱ");
-			break;
-		case "후라이드":
-			System.out.println(userorder + "치킨 쌉가능 바로감 ㄱㄱ");
-			break;
-		default:
-			System.out.println(userorder + "은 없는 치킨입니다.");
-		}
+		
+		
+		
+			if(arr.equals(userorder)) {
+				System.out.println(" 배달 가능");
+			}else { 
+				System.out.println("없는 치킨입니다.");
+			}
+		
+		
+		
 
 		// 있으면 쌉가능 , 없으면 불가능 을 출력
 
@@ -241,7 +242,7 @@ public class ArrayPractice1 {
 	public void method14() {
 		int[] randomNumber = new int[6];
 		int temp = 0;
-
+		//랜덤수 생성 및 중복 제거
 		for (int i = 0; i < randomNumber.length; i++) {
 			randomNumber[i] = (int) (Math.random() * 45 + 1);
 			for (int j = 0; j < i; j++) {
@@ -251,7 +252,7 @@ public class ArrayPractice1 {
 				}
 			}
 
-		}
+		}// 오름차순 정렬
 		for (int i = 0; i < randomNumber.length; i++) {
 			for (int j = 1; j < randomNumber.length; j++) {
 				if (randomNumber[j - 1] > randomNumber[j]) {
@@ -261,7 +262,7 @@ public class ArrayPractice1 {
 				}
 			}
 		}
-
+		//출력
 		for (int i = 0; i < randomNumber.length; i++) {
 			if (i > 0) {
 				System.out.print(", ");
