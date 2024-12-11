@@ -53,26 +53,36 @@ public class ArrayPractice1 {
 		System.out.println(fruit[1]);
 	}
 
-	public void method5() {
+	public void practice5() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print(" 문자열을 입력해주세요 : ");
+
+		System.out.print("문자열 : ");
 		String str = sc.nextLine();
 
-		System.out.print("문자를 입력해주세요 : ");
-		char ch = sc.nextLine().charAt(0);
+		char[] arr = new char[str.length()];
 
-		String[] Sstr = new String[str.length()];
+		for (int i = 0; i < str.length(); i++) {
+			arr[i] = str.charAt(i);
+		}
 
-		for (int i = 0; i < Sstr.length; i++) {
+		System.out.print("문자 : ");
+		char search = sc.nextLine().charAt(0);
 
-			if (Sstr[i].equals(ch)) {
+		int sum = 0;
+		String index = "";
 
+		for (int i = 0; i < str.length(); i++) {
+			if (arr[i] == search) {
+				index += i + " ";
+				sum++;
 			}
 		}
 
-		System.out.println(str + "에" + ch + "가 존재하는 위치(인덱스) : ");
-		System.out.println(ch + " 개수:");
+		System.out.println(str + "에" + search + "가 존재하는 위치(인덱스) : " + index);
+		System.out.println(search + "개수 : " + sum);
+
+		sc.close();
 
 	}
 
@@ -159,17 +169,11 @@ public class ArrayPractice1 {
 		System.out.println("치킨 이름을 입력해주세요 : ");
 		String userorder = sc.nextLine();
 
-		
-		
-		
-			if(arr.equals(userorder)) {
-				System.out.println(" 배달 가능");
-			}else { 
-				System.out.println("없는 치킨입니다.");
-			}
-		
-		
-		
+		if (arr.equals(userorder)) {
+			System.out.println(" 배달 가능");
+		} else {
+			System.out.println("없는 치킨입니다.");
+		}
 
 		// 있으면 쌉가능 , 없으면 불가능 을 출력
 
@@ -242,7 +246,7 @@ public class ArrayPractice1 {
 	public void method14() {
 		int[] randomNumber = new int[6];
 		int temp = 0;
-		//랜덤수 생성 및 중복 제거
+		// 랜덤수 생성 및 중복 제거
 		for (int i = 0; i < randomNumber.length; i++) {
 			randomNumber[i] = (int) (Math.random() * 45 + 1);
 			for (int j = 0; j < i; j++) {
@@ -252,7 +256,7 @@ public class ArrayPractice1 {
 				}
 			}
 
-		}// 오름차순 정렬
+		} // 오름차순 정렬
 		for (int i = 0; i < randomNumber.length; i++) {
 			for (int j = 1; j < randomNumber.length; j++) {
 				if (randomNumber[j - 1] > randomNumber[j]) {
@@ -262,7 +266,7 @@ public class ArrayPractice1 {
 				}
 			}
 		}
-		//출력
+		// 출력
 		for (int i = 0; i < randomNumber.length; i++) {
 			if (i > 0) {
 				System.out.print(", ");
