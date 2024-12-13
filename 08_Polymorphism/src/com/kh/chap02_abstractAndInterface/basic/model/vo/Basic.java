@@ -14,6 +14,7 @@ public interface Basic {//클래스는 퍼블릭 클래스라고 떠있는데 �
 	public abstract void eat();
 	public abstract void sleep();
 	/*public abstract*/ void slepp(); //이런식으로 사용해도 기본적으로  public abstract 를 포함하고 있으므로 에러가 나지 않음.
+	//인터페이스 는 추상단계에서 중요한 단계이다. 
 	
 	
 	
