@@ -7,7 +7,12 @@ import java.io.InputStreamReader;
 public class B_CheckedException {
 
 	public void method1() {
-		method2();
+		try {
+			method2();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void method2() throws IOException {
