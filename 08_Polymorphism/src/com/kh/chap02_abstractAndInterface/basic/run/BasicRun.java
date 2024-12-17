@@ -67,27 +67,6 @@ public class BasicRun {
 		 * 
 		 */
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
