@@ -13,55 +13,66 @@ public class Book {
 	
 	
 	public Book() {	}
+
 	public Book(String title, String author, String publisher, Date publishDate, int price) {
-		this.title=title;
-		this.author=author;
-		this.publisher=publisher;
-		this.publishDate=publishDate;
-		this.price=price;
+		super();
+		this.title = title;
+		this.author = author;
+		this.publisher = publisher;
+		this.publishDate = publishDate;
+		this.price = price;
 	}
-	
-	// getter, setter
+		
+		
+
 		public String getTitle() {
 			return title;
 		}
+
 
 		public void setTitle(String title) {
 			this.title = title;
 		}
 
-		public String getauthor() {
+
+		public String getAuthor() {
 			return author;
 		}
+
 
 		public void setAuthor(String author) {
 			this.author = author;
 		}
 
+
 		public String getPublisher() {
 			return publisher;
 		}
+
 
 		public void setPublisher(String publisher) {
 			this.publisher = publisher;
 		}
 
+
 		public Date getPublishDate() {
 			return publishDate;
 		}
+
 
 		public void setPublishDate(Date publishDate) {
 			this.publishDate = publishDate;
 		}
 
+
 		public int getPrice() {
 			return price;
 		}
 
+
 		public void setPrice(int price) {
 			this.price = price;
 		}
-		
 		@Override
 		public String toString() {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
@@ -74,6 +85,10 @@ public class Book {
 			// publishDate (Date타입) --- 포맷적용한 ---> str (String)
 			//return "";
 		}
-	
+
+
+
+
+
 	
 }

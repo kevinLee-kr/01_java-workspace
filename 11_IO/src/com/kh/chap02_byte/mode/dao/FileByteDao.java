@@ -30,11 +30,13 @@ public class FileByteDao {
 			fout.write(97);
 			fout.write('b');
 
-			byte[] arr = { 99, 100, 101 };
+			byte[] arr = { 99, 100, 101, 102};
 			fout.write(arr); // cde 문자 저장. cde = 알파벳.
-			// write(byte[] b, int off, int len): byte 배열의
+			                                   // write(byte[] b, int off, int len): byte 배열의
 			fout.write(arr, 1, 2); // de문자가 저장됨.
-
+		
+			
+			
 //			3. 스트림 다 이용했으면 반드시 반납하기
 //			fount.close();
 //			위에서 write()메소드 실행시 io 오류 발생시 -> catch 블럭 실행 후 빠져나갈꺼임(반납하는 코드 실행 안됨)
@@ -48,7 +50,7 @@ public class FileByteDao {
 //				3. 스트림 이용 완료 헀으면 반납해야된다.(반드시);
 				fout.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+
 				e.printStackTrace();
 			}
 
@@ -97,32 +99,22 @@ public class FileByteDao {
 //				}
 //				System.out.println(value);
 //			}
-			
+
 //			방법2. 권장
 			int value = 0;
-			while((value = fin.read()) != -1) {
+			while ((value = fin.read()) != -1) {
 				System.out.println(value);
 			}
-			
-			
-						
-			
-			
-			
-			
-			
-			
-			
-			
+
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
+		} finally {
 			try {
-				
+
 //			3. 사용마친 스트림 반남하기.
 				fin.close();
 			} catch (IOException e) {

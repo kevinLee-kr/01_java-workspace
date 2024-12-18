@@ -19,7 +19,7 @@ public class FileByteRun {
 		FileByteDao fdao = new FileByteDao();
 		//fdao.fileSave();
 		
-		fdao.fileRead();
+		fdao.fileSave();
 		
 		
 	}

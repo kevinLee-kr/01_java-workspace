@@ -21,7 +21,7 @@ public class FileCharDao {
 
 		FileWriter fw = null;
 
-		// 1. FileWwriter객체 생성
+		// 1. FileWriter객체 생성
 		try {
 			fw = new FileWriter("b_char.txt");// 해당 파일이 없으면 새로 만들고 있으면 출력
 
