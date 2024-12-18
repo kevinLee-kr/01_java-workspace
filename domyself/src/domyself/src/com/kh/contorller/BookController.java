@@ -50,10 +50,10 @@ public class BookController {
 		// 1_3) year, month, date 가지고 Date객체 생성하기
 		// StringTokenizer str = new StringTokenizer(newDate,"-");
 		/*
-		 * int year = Integer.parseInt(str.nextToken()); int month =
-		 * Integer.parseInt(str.nextToken()); int day =
-		 * Integer.parseInt(str.nextToken()); Date publishDate = new Date(year-1900,
-		 * month-1, day);
+		 * int year = Integer.parseInt(str.nextToken()); 
+		 * int month =Integer.parseInt(str.nextToken());
+		 * int day =Integer.parseInt(str.nextToken());
+		 *  Date publishDate = new Date(year-1900,month-1, day);
 		 */
 
 		// 2) split 메소드를 이용한 방법
@@ -75,7 +75,7 @@ public class BookController {
 
 	// 3. 도서 출간일 출력 기능 메소드
 	public void printBookPublishDate() {
-		// 새로 입력받은 도서 (5번째 도서)의 출간일 출력
+		// 새로 입력받은 도서 (6번째 도서)의 출간일 출력
 
 		// "xxxx년 xx월 xx일 출간" 과 같은 패턴으로 출력
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
