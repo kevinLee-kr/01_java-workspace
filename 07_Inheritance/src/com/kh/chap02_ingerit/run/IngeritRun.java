@@ -1,5 +1,7 @@
 package com.kh.chap02_ingerit.run;
 
+import java.util.ArrayList;
+
 import com.kh.chap02_ingerit.model.vo.AirPlane;
 import com.kh.chap02_ingerit.model.vo.Car;
 import com.kh.chap02_ingerit.model.vo.Ship;
@@ -48,6 +50,22 @@ public class IngeritRun {
 		 * --> 오버라이딩을 통해서도, object의ㅡ 메서드를 수정할 수 있다. 
 		 * 
 		 */
+		
+		System.out.println("============");
+		
+		ArrayList<Vehecle> list = new ArrayList<Vehecle>();
+		
+		list.add(new Car("벤틀리", 12.5, "세단", 4));
+		list.add(new Car("낚시배", 3, "어선", 1));
+		list.add(new Car("종이비행기", 0.01	, "제트기", 10,4));
+		
+		for(int i = 0; i<list.size(); i++) {
+			System.out.println(list.get(i).information());
+		}
+		
+		
+		
+		
 		
 		
 	}
