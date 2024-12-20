@@ -51,7 +51,7 @@ public class ObjectArrayRun {
 
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Book> books = new ArrayList<Book>();
-
+		
 		while (true) {
 			System.out.print("도서명 : ");
 			String title = sc.nextLine();

@@ -91,6 +91,8 @@ public class PolyRun {
 				 ((Child2)arr[i]).printChild2();
 			 }
 			//instanceof 연산자 -> 연산결과 true / false 로 반환
+			 
+			 
 			 //현재 레퍼런스가 실질적으로 어떤 클래스로 만들어졌는지를 확인해주는 연산자
 				 if(i==0 || i ==3) {
 						 ((Child1)arr[i]).printChild1();
