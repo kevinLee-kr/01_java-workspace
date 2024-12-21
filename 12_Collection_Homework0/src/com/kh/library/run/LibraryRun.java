@@ -198,7 +198,10 @@ public class LibraryRun {
 				} else if (search == 5) { // 5. 특정 가격 밑으로 책 찾기
 					System.out.print("가격을 입력하세요 : ");
 					price = sc.nextInt();
-					System.out.println(bc.searchBookByPrice(price));
+					for (int i = 0; i < bc.searchBookByPrice(price).size(); i++) {
+						System.out.println(bc.searchBookByPrice(price).get(i));
+					}
+//					System.out.println(bc.searchBookByPrice(price));
 				} else if (search == 6)
 					flag = true; // 6. 이전으로
 				else
@@ -207,7 +210,7 @@ public class LibraryRun {
 				break;
 
 			case 4:// 4. 전체책 가격 합계 및 평균 조회
-				System.out.println("전체책 가격 합계 : " + bc.getTotalPrice() + "원");
+				System.out.println("모든 책의 가격 합계 : " + bc.getTotalPrice() + "원");
 				for (int i = 0; i < bs.size(); i++) {
 					System.out.print(bc.getAllBook().get(i).getPrice() + "원");
 					if (i == (bs.size() - 1)) {
@@ -217,7 +220,7 @@ public class LibraryRun {
 					}
 				}
 				System.out.println("");
-				System.out.println("전체책 가격 평균 : " + bc.getAvgPrice() + "원");
+				System.out.println("모든 책의 가격 평균 : " + bc.getAvgPrice() + "원");
 				System.out.println("(" + bc.getTotalPrice()+ "원) / ("+ bs.size() +"권) = " + bc.getAvgPrice() +"원");
 				break;
 
