@@ -39,12 +39,12 @@ public class Map {
 				String word = entry.getKey();
 				String value = entry.getValue();
 
-				//영문명(키)를 통해 조회해 맞는것이 있으면 한글로 출력
+				// 영문명(키)를 통해 조회해 맞는것이 있으면 한글로 출력
 				String kor = dic.get(user);
-				if(kor == null) {
+				if (kor == null) {
 					System.out.println(user + "해당 단어는 없는 단어입니다.");
-				}else {
-					System.out.println(user + "의뜻은 " + kor+"입니다.");
+				} else {
+					System.out.println(user + "의뜻은 " + kor + "입니다.");
 				}
 			}
 

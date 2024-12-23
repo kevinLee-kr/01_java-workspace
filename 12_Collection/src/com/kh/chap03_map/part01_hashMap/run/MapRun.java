@@ -14,7 +14,7 @@ public class MapRun {
 
 		HashMap hm = new HashMap();
 
-		// 계층구조를 보면
+		// 계층구조를 보면 
 		// List 계열, Set 계열의 클래스들은 collection 구현한 클래스다.
 		// 객체를 추가하고자 할 떄 공통적으로 add 메소드를 이용한다.
 		// 객체를 추가하고자 할떄 공통적으로 add 메소드 이용한다.
@@ -29,7 +29,7 @@ public class MapRun {
 
 		hm.put("다이제", new Snack("초코맛", 1500));
 		hm.put("칸쵸", new Snack("단맛", 600));
-		hm.put("새우깡", new Snack("짠맛", 500));
+		hm.put("새우깡", new Snack("짠맛", 500)); 
 
 		System.out.println(hm);
 
@@ -81,7 +81,7 @@ public class MapRun {
 		// 2. 1번과정에서 작업된 keySet 을 Iterator에 담기
 		Iterator itKey = keySet.iterator();
 
-		while (itKey.hasNext()) { // 데이터 있냐 나와, 있냐, 나와 , 있냐, 없어, 꺼져
+		while (itKey.hasNext()) { // 데이터 있냐 나와, 있냐, 나와 , 있냐, 없어,?
 			String key = (String) itKey.next();
 			Snack value = (Snack) hm.get(key);
 			System.out.println(key + "=" + value);

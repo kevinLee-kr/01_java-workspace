@@ -97,21 +97,6 @@ public class BookController implements BookManager {
 		return onlyMagazine;
 	}
 
-	/*
-	@Override
-	public ArrayList<Book> magazineOfThisYearInfo(int year) {
-		
-		ArrayList<Book> magazineOfThisYear = new ArrayList<>();
-
-		for(int i = 0; i < list.size(); i++) {
-			if(((Magazine)list.get(i)).getYear() == year) {
-				magazineOfThisYear.add(list.get(i));
-			}
-		}
-		
-		return magazineOfThisYear;
-	}
-	*/
 	
 	@Override
 	public ArrayList<Book> magazineOfThisYearInfo(int year) {
@@ -177,5 +162,7 @@ public class BookController implements BookManager {
 		
 		return avg;
 	}
+
+	
 
 }

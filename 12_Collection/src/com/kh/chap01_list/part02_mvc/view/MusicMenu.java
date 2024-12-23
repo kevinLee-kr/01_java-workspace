@@ -27,8 +27,8 @@ public class MusicMenu {
 			System.out.println("0.프로그램 종료");
 
 			System.out.print(">> 메뉴 선택 해주세요 : ");
-			int menu = sc.nextInt();
-			sc.nextLine();// int 형 입력값 받으면 그냥 이거 적어라. 
+			int menu = sc.nextInt(); 
+			sc.nextLine();// in t 형 입력값 받으면 그냥 이거 적어라. 
 
 			switch(menu) {//해당 메서드로 전송 및 호출.
 			case 1: insertMusic(); break;

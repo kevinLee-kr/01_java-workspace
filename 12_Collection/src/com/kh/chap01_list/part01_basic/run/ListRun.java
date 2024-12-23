@@ -1,6 +1,7 @@
 package com.kh.chap01_list.part01_basic.run;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import com.kh.chap01_list.part01_basic.basic.model.vo.Music;
@@ -56,6 +57,8 @@ public class ListRun {
 		list.add(new Music("새삥", "지코"));
 		list.add(new Music("죽일놈", "다이나믹듀오"));
 		list.add("가보자구");
+		list.add("음 되나");
+		
 		System.out.println(list);
 		//위에서 했던말.
 		//지정된 크기보다 더 많은 값을 할당 했는데 오류 안남 -> 장점 : 크기에 제약이 없다. 

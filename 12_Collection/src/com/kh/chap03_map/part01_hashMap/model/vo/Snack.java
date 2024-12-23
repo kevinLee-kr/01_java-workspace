@@ -26,7 +26,7 @@ public class Snack {
 	}
 
 	public void setCalory(int calory) {
-		this.calory = calory;
+		this.calory = calory; 
 	}
 
 	@Override

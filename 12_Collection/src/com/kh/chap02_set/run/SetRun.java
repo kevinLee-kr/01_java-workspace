@@ -67,12 +67,12 @@ public class SetRun {
 		
 		System.out.println("_+_+_+_+_+_+__+_+_+_+_+_+_+_+_____+_+_+_");
 		//3. Iterator 반복자를 이용해서 순차적으로 접근. 한다. 
-		Iterable<Student> it = hs2.iterator();
-		while(it.hasNext()) {
-			Student s = it.next();
-			System.out.println(s);
-		}
-		it.next(); 
+//		Iterable<Student> it = hs2.iterator(); 
+//		while(it.hasNext()) {
+//			Student s = it.next();
+//			System.out.println(s);
+//		}
+//		it.next(); 
 	}
 
 }

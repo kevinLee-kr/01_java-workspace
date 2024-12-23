@@ -211,17 +211,19 @@ public class LibraryRun {
 
 			case 4:// 4. 전체책 가격 합계 및 평균 조회
 				System.out.println("모든 책의 가격 합계 : " + bc.getTotalPrice() + "원");
-				for (int i = 0; i < bs.size(); i++) {
+				for (int i = 0; i < (bs.size()); i++) {
 					System.out.print(bc.getAllBook().get(i).getPrice() + "원");
-					if (i == (bs.size() - 1)) {
+					if (i == (bs.size()-1)) {
 						break;
 					} else {
+
 						System.out.print(" + ");
+
 					}
 				}
 				System.out.println("");
 				System.out.println("모든 책의 가격 평균 : " + bc.getAvgPrice() + "원");
-				System.out.println("(" + bc.getTotalPrice()+ "원) / ("+ bs.size() +"권) = " + bc.getAvgPrice() +"원");
+				System.out.println("(" + bc.getTotalPrice() + "원) / (" + bs.size() + "권) = " + bc.getAvgPrice() + "원");
 				break;
 
 			case 5:
