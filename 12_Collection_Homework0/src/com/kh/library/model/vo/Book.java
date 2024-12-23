@@ -7,10 +7,11 @@ public class Book {
 	private String publisher;
 	private int price;
 	private String description;
-
-	public Book() { }
+	
+	public Book() {}
 
 	public Book(String bNo, String title, String author, String publisher, int price, String description) {
+		super();
 		this.bNo = bNo;
 		this.title = title;
 		this.author = author;
@@ -70,9 +71,14 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book [bNo=" + bNo + ", title=" + title + ", author=" + author + ", publisher=" + publisher + ", price="
-				+ price + ", description=" + description + "]" ;
+				+ price + ", description=" + description + "]";
 	}
-
+	
 	// 단축키로 생성해보기
+	
+	
+	
+	
+	
 
 }

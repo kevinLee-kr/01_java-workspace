@@ -4,12 +4,11 @@ package com.kh.library.model.vo;
 public class Magazine extends Book{
 	private int year;
 	private int month;
-
-	public Magazine() {
-	}
+	
+	public Magazine() {}
 
 	public Magazine(String bNo, String title, String author, String publisher, int price, String description, int year, int month) {
-		super(bNo, title, author, publisher, price,description );
+		super(bNo, title, author, publisher, price, description);
 		this.year = year;
 		this.month = month;
 	}
@@ -32,9 +31,10 @@ public class Magazine extends Book{
 
 	@Override
 	public String toString() {
-		return "Magazine [" + super.toString() + "year=" + year + ", month=" + month + "]";
+		return "Magazine [" + super.toString() +"year=" + year + ", month=" + month + "]";
 	}
 
 	// 단축키로 생성해보기
-
+	
+	
 }
