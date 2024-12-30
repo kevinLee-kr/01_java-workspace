@@ -265,6 +265,11 @@ public class ArrayPractice {
 	}
 
 	public void practice14() { // 로또
+//		
+//		자바로 로또 추첨기 만들기
+//		1. 1부터 45무작위 수 뽑아서 6자리 배열에 담기
+//		2. 성공하면 배열에 중복값 안들어가게 수정해서 6자리 채우기
+//		3. 배열 정렬시키기 단) 정렬 메서드 사용 금지
 		int[] randomNumber = new int[6];
 		int temp = 0;
 
