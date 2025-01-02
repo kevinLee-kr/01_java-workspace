@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
@@ -35,6 +36,7 @@ public class ClientProgram {
 
 //		socket = new Socket(서버의 아이피 주소, 포트번호);
 		serverIP = "192.168.20.48";
+	
 		try {
 			socket = new Socket(serverIP, port);
 			// 만약에 서버가 꺼져있거나, 못 찾으면 통신에 실패한다. (네이버 호출 안되던거 기억함?)
@@ -68,7 +70,7 @@ public class ClientProgram {
 					pw.flush();
 
 					String message = br.readLine();
-					System.out.println(" 받았다. 읽었다. ");
+					System.out.println(" 받았다. 읽었다. " + message);
 
 				}
 
