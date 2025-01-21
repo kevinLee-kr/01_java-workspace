@@ -1,4 +1,4 @@
-package com.kh.library.model.vo;
+ package com.kh.library.model.vo;
 
 public class Book {
 	private String bNo;

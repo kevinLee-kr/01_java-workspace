@@ -23,13 +23,13 @@ public class GenericListRun {
 
 		List<Music> sub = list.subList(0, 2);
 		list.addAll(sub);
-
+		System.out.println("================================");
 		System.out.println(list);
-		Music m = list.get(0);
-		System.out.println(m);
-
-		System.out.println(list.get(0));// music 값
-		System.out.println(list.get(0).getTitle()); // 바로 이렇게 제목을 서칭할 수 있다.
+//		Music m = list.get(0);
+//		System.out.println(m);
+//
+//		System.out.println(list.get(0));// music 값
+//		System.out.println(list.get(0).getTitle()); // 바로 이렇게 제목을 서칭할 수 있다.
 
 		for (Music h : list) { // h = list.get(0) o에 list 0번이 쏙 들어감 // o = list.get(1)o에 list1번이 쏙 들어감
 			System.out.println(h);
